@@ -1,0 +1,92 @@
+/* ============ VARIABLES =============================== */
+
+:root {
+  
+  --body-bg-color: #FAF7FD;
+  --purple: #BB99DD;
+  
+
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ============ BASE =============================== */
+body{
+  background-color: var(--body-bg-color);
+  color: var(--purple);
+  overflow: hidden;
+}
+
+.content{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============ HOME =============================== */
+.profile{
+  margin-bottom: 3.3rem;
+  text-align: center;
+}
+
+.profile img{
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  margin-bottom: 2.2rem;
+
+  border: .2rem solid var(--purple)
+}
+
+.profile p{
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.link-single{
+  text-align: center;
+  width: 32.6rem;
+  height: 4.9rem;
+  border: .2rem solid var(--purple);
+  margin-bottom: 1.6rem; 
+}
+
+
+.link a{
+text-decoration: none;
+color: var(--purple);
+
+font-size: 2.4rem;
+font-weight: 600;
+}
+
+.icons{
+  margin-top: 5.2rem;
+}
+
+.icons a:not(last-child) {
+  margin-right: 2.9rem;
+}
+
+/* ============ MEDIA QUERIES =============================== */
+@media screen and (max-width: 768px){
+  .content{
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .profile{
+    margin-bottom: .5rem;
+  }
+
+  .profile img{
+    margin-bottom: .5rem;
+  }
+
+  .icons{
+    margin-top: .8rem;
+  }
+}
